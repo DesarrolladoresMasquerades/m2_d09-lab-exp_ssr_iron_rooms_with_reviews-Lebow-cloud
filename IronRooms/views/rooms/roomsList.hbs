@@ -1,0 +1,11 @@
+<h2>Avaiable Rooms</h2>
+{{#each roomsList}}
+    <div>
+        <h3>{{name}}</h3>   
+            <img src="{{imageUrl}}" alt="Room Image">  
+                <p>{{description}}</p> 
+              <button><a href="/">Back</a></button>  
+              <button><a href="">See details</a></button> 
+              <button><a href="/rooms/{{id}}/edit">Edit Room</a></button> 
+    </div>
+{{/each}}

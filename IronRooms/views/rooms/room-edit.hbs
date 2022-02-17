@@ -1,0 +1,19 @@
+<h2>Edit your Room</h2>
+
+<form action="/rooms/{{id}}/edit" method="POST">
+
+  <label>
+    Name:
+    <input type="text" name="name" />
+  </label>
+  <label>
+    Description:
+    <input type="text" name="description" />
+  </label>
+  <label>
+    Image:
+    <input type="text" name="image" />
+  </label>
+    <button type="submit">Change</button>
+</form>
+<a href="/rooms">Back</a>
