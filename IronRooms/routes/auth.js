@@ -21,10 +21,10 @@ router.get("/signup", isLoggedOut, (req, res) => {
 router.post("/signup", isLoggedOut, (req, res) => {
   const { email, fullName, password } = req.body;
 
-  if (!email && !fullName) {
+  if (!email) {
     return res
       .status(400)
-      .render("auth/signup", { errorMessage: "Please provide your email/email." });
+      .render("auth/signup", { errorMessage: "Please provide your email." });
   }
 
   if (password.length < 3) {
